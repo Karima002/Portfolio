@@ -17,10 +17,14 @@
 <style>
     ul {
         display: flex;
-        list-style: none;
-        gap: 1rem;
-        justify-content: space-evenly;
-        gap: 10em;
+        flex-direction: column;
+        gap: 1em;
+        @media (min-width: 768px) {
+            list-style: none;
+            justify-content: space-evenly;
+            gap: 10em;
+            flex-direction: row;
+        }
     }
 
     a {
@@ -30,6 +34,12 @@
         color: var(--neutral-color-white);
         font-weight: 100;
         text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: .3em;
+            cursor: pointer;
+        }
     }
 
 </style>

@@ -46,6 +46,15 @@
 <style>
     :global(body) {
         background-color: black;
+        overflow: hidden;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
     }
 
     .intro {
@@ -66,7 +75,6 @@
         font-family: var(--font-text);
         font-size: var(--font-size-heading);
         bottom: 4em;
-        letter-spacing: 5%;
     }
 
 
@@ -83,12 +91,20 @@
     h1, h2 {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
-        font-size: var(--font-size-heading);
+        font-size: var(--font-size-xl);
         position: relative;
         z-index: -1;
-        bottom: 5em;
+        bottom: 9em;
         padding-left: .5em;
-    }
+            @media (min-width: 400px) {
+                font-size: var(--font-size-xxl);
+                bottom: 7.5em;
+            }
+            @media (min-width: 700px) {
+                font-size: var(--font-size-heading);
+                bottom: 4.2em;
+            }
+    }   
 
     h1 {
         text-transform: uppercase;
