@@ -5,7 +5,7 @@
         </li>
         
         <li>
-            <a href="/about">[Projects]</a>
+            <a href="/projects">[Projects]</a>
         </li>
 
         <li>
