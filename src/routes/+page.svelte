@@ -44,6 +44,17 @@
 </main>
 
 <style>
+    :global(body) {
+        background-color: black;
+        overflow: hidden;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
     .intro {
         position: fixed;
         top: 0;
