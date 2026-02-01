@@ -1,0 +1,46 @@
+
+@font-face {
+  font-family: 'Alumni Sans Pinstripe';
+  src: url('/fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Alumni Sans Pinstripe Italic';
+  src: url('/fonts/AlumniSansPinstripe-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Al tarikh';
+  src: url('/fonts/altarikh.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Instrument Serif Italic';
+  src: url('/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+}
+
+
+
+body {
+    --neutral-color-black: #000000;
+    --neutral-color-white: #FFFFFF;
+    --accent-color-darkgreen: #3A3C34;
+
+    --font-text: 'Alumni Sans Pinstripe', sans-serif;
+    --font-text-italic: 'Alumni Sans Pinstripe Italic', sans-serif;
+    --font-arabic: 'Al tarikh', sans-serif;
+    --font-insterument-serif: 'Instrument Serif', serif;
+    --font-insterument-serif-italic: 'Instrument Serif Italic', serif;
+
+
+    --font-size-xl: 2.5rem;   /* 2.5 * 16px = 40px */
+    --font-size-l: 1.5rem;    /* 1.5 * 16px = 24px */
+    --font-size-m: 1.25rem;   /* 1.25 * 16px = 20px */
+    --font-size-s: 1rem;      /* 1 * 16px = 16px */
+    --font-size-xs: 0.875rem; /* 0.875 * 16px = 14px */
+}
