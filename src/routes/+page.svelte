@@ -18,6 +18,24 @@
 		ease: "power2.out" 
 		})
 
+        .to(".intro-text", {
+        opacity: 0,
+        y: -30,
+        duration: 0.6,
+        ease: "power2.in"
+        }, "+=1") //delay of 1 second after the previous animation
+
+        .fromTo(".intro-text-arabic",{ 
+            opacity: 0,
+            y: 30 },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            ease: "power2.out"
+        }, "+=0.8")
+
+
 		.to('.intro', {
 			autoAlpha: 0, 
 			duration: 1,
@@ -32,6 +50,7 @@
 <main>
     <section class="intro">
         <h1 class="intro-text">Portfolio</h1>
+        <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
 
     <picture>
@@ -46,7 +65,6 @@
 <style>
     :global(body) {
         background-color: black;
-        overflow: hidden;
     }
 
     * {
@@ -54,7 +72,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
     .intro {
         position: fixed;
         top: 0;
@@ -69,12 +86,18 @@
         background-color: var(--accent-color-darkgreen);
     }
 
-    .intro-text {
+    .intro-text, .intro-text-arabic {
+        position: absolute;
         font-family: var(--font-text);
         font-size: var(--font-size-heading);
-        bottom: 4em;
+        top: .1em;
     }
 
+    .arabic-font {
+        font-family: var(--font-arabic);
+        font-weight: 100;
+
+    }
 
     picture {
         display: flex;
