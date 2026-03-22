@@ -10,36 +10,9 @@
 
 <main>
     <!-- <img class="pattern" src="{pattern}" alt="A light darkgreen moroccan pattern" /> -->
-
-    <div class="main-content">
-        <section>
-            <enhanced:img class="project-image" src="{qatarMuseumsImg}" alt="Qatar Museums website" />
-            
-            <nav>
-                <h1>Qatar Museums</h1>
-                <a>GitHub</a>
-                <a>Website</a>
-            </nav>
-        </section>
-
-        <section>
-            <enhanced:img class="project-image" src="{civicSocialMediaImg}" alt="Civic Social media website" />
-            <nav>
-                <h1>Civic Social media</h1>
-                <a>GitHub</a>
-                <a>Website</a>
-            </nav>
-        </section>
-
-        <section>
-            <enhanced:img class="project-image" src="{fundaImg}" alt="Funda website" />
-            <nav>
-                <h1>Funda</h1>
-                <a>GitHub</a>
-                <a>Website</a>
-            </nav>
-        </section>
-    </div>
+    <section>
+        <h1>Projects</h1>
+    </section>
 </main>
 
 <style>
@@ -53,46 +26,22 @@
         flex-direction: row;
     }
 
-    .main-content {
+    section {
         display: flex;
-        flex-direction: column;
-        gap: 2em;
-        padding: 6em 0 6em 6em;
-        row-gap: 2em;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+        width: 100%;   
+        height: 100vh; 
     }
 
     h1 {
-        font-family: var(--font-text);
-        color: var(--neutral-color-white);
-        font-size: var(--font-size-heading);
-        font-weight: 100;
+        color: white;
+        font-size: 12em;
+        font-family: var(--font-instrument-serif);
+        font-weight: 300;
         text-transform: uppercase;
-        margin-top: .5em;
+        text-align: center;  
     }
-
-    section {
-        display: flex;
-        flex-direction: row;
-        column-gap: 2em;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1em;
-    }
-
-    a {
-        color: var(--neutral-color-white);
-        font-family: var(--font-text);
-        font-size: var(--font-size-xl);
-        text-transform: uppercase;
-            &:hover {
-                text-decoration: underline;
-                text-decoration-thickness: 1px;
-                text-underline-offset: .3em;
-                cursor: pointer;
-            }
-    }
+    
 </style>
