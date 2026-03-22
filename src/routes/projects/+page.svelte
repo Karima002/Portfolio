@@ -4,6 +4,9 @@
     import qatarMuseumsImg from '$lib/assets/qatar.png';
     import civicSocialMediaImg from '$lib/assets/csm.svg';
     import fundaImg from '$lib/assets/funda.svg';
+
+      let { data } = $props();
+
 </script>
 
 <Header />
@@ -13,6 +16,13 @@
     <section>
         <h1>Projects</h1>
     </section>
+
+  {#each data.projects as project}
+    <article>
+        <h2>{project.title}</h2>
+        <p>{project.body}</p>
+    </article>
+  {/each}
 </main>
 
 <style>
