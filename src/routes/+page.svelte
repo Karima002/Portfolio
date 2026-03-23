@@ -42,14 +42,20 @@
 			ease: 'power4.out'
 		})
 
+        // Progressive Enhancement: If GSAP is not loaded, show the loader without animation. https://gsap.com/community/forums/topic/39201-best-practices-for-autoalpha-progressive-enhancement/
+        if (typeof window.gsap === "undefined") {
+        document.querySelector(".progressive-enhancement").classList.add("js");
+        }
 	});
+
+     
 </script>
 
 <Header />
 
 <main>
-    <section class="intro">
-        <h1 class="intro-text">Portfolio</h1>
+    <section class="intro progressive-enhancement">
+        <h1 class="intro-text ">Portfolio</h1>
         <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
 
@@ -129,5 +135,9 @@
 
     h1 {
         text-transform: uppercase;
+    }
+
+    .progressive-enhancement {
+        display: none;
     }
 </style>
