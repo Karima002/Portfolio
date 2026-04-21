@@ -19,6 +19,11 @@
                 <img src={QatarMuseums} alt="Qatar Museums homepage artwork displaying a crown" width="300" height="150" />
                 <p class="body">{project.body}</p>
             </article>
+
+            <nav>
+                <a href="https://github.com/Karima002/user-experience-enhanced-website-s10">[Github]</a>
+                <a href="https://user-experience-enhanced-website-w869.onrender.com/en">[Live Site]</a>
+            </nav>
         </section>
 
         <section class="outro">
@@ -48,7 +53,6 @@
         font-weight: 300;
         text-transform: uppercase;
         text-align: center;
-       
     }
 
     h1 {
@@ -88,6 +92,13 @@
         }
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
     .outro {
         display: flex;
         flex-direction: row;
@@ -95,7 +106,7 @@
         color: var(--neutral-color-white);
         font-family: var(--font-text);
         font-size: clamp(1.5rem, 5vw, 9rem);
-        margin-top: 4em;
+        margin-top: 2em;
         text-transform: uppercase;
     }
 </style>
