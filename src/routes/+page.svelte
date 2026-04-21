@@ -44,7 +44,7 @@
 
         // Progressive Enhancement: If GSAP is not loaded, show the loader without animation. https://gsap.com/community/forums/topic/39201-best-practices-for-autoalpha-progressive-enhancement/
         if (typeof window.gsap === "undefined") {
-        document.querySelector(".progressive-enhancement").classList.add("js");
+        document.querySelector(".intro").classList.toggle("js");
         }
 	});
 
@@ -54,7 +54,7 @@
 <Header />
 
 <main>
-    <section class="intro progressive-enhancement">
+    <section class="intro js">
         <h1 class="intro-text ">Portfolio</h1>
         <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
@@ -72,12 +72,7 @@
     :global(body) {
         background-color: black;
     }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    
     .intro {
         position: fixed;
         top: 0;
@@ -85,7 +80,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         text-align: center;
         color: var(--neutral-color-white);
@@ -137,7 +132,7 @@
         text-transform: uppercase;
     }
 
-    .progressive-enhancement {
+    .js{
         display: none;
     }
 </style>
