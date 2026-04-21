@@ -117,13 +117,14 @@
         }
     }
 
-        .name, .function {
+    .name, .function {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
         display: flex;   
         justify-content: left;
         align-items: flex-end;     
         padding-left: 1em;
+        z-index: -2;
         font-size: clamp(var(--font-size-xxl), 5vw, var(--font-size-heading));
             @media (min-width: 700px) {
                 position: relative;
@@ -134,29 +135,6 @@
     .name {
         padding-top: 1em;
     }
-
-/*
-    picture {
-        @media (min-width: 768px) {
-            display: flex;
-            column-gap: 20em;
-        }
-    }
-
-    picture .background {
-        position: relative;
-        width: 100%;
-        height: auto;
-        @media (min-width: 768px) {
-            left: 1em;
-        }
-    }
-
-  
-
-    h1 {
-        text-transform: uppercase;
-    } */
 
     .js{
         display: none;

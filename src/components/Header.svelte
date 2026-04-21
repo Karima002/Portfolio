@@ -28,19 +28,4 @@
         }
     }
 
-    a {
-        text-decoration: none;
-        font-family: var(--font-text);
-        font-size: var(--font-size-xl);
-        color: var(--neutral-color-white);
-        font-weight: 100;
-        text-transform: uppercase;
-        &:hover {
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: .3em;
-            cursor: pointer;
-        }
-    }
-
 </style>
