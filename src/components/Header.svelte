@@ -1,7 +1,7 @@
 <header>
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="/">[Home]</a>
         </li>
         
         <li>
@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: column;
         gap: 1em;
+        padding: 2em;
         @media (min-width: 768px) {
             list-style: none;
             justify-content: space-evenly;
