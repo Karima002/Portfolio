@@ -60,12 +60,11 @@
     </section>
 
     <picture>
-        <img class="background" src="{background}" alt="A dark green geometric pattern" />
-        <img class="pattern" src="{pattern}" alt="A light darkgreen moroccan pattern" />
+        <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" />
     </picture>  
 
-    <h1>Karima Mouadi</h1>
-    <h2>Frontend Design and Developer</h2>
+    <h1 class="name">Karima Mouadi</h1>
+    <h2 class="function">Frontend Design and Developer</h2>
 </main>
 
 <style>
@@ -87,10 +86,17 @@
         background-color: var(--accent-color-darkgreen);
     }
 
-    .intro-text, .intro-text-arabic {
+    .intro-text {
         position: absolute;
         font-family: var(--font-text);
         font-size: var(--font-size-heading);
+        top: .1em;
+    }
+
+    .intro-text-arabic {
+        position: absolute;
+        font-family: var(--font-text);
+        font-size: 4.8em;
         top: .1em;
     }
 
@@ -100,37 +106,57 @@
 
     }
 
-    picture {
+    .background {
+        position: relative;
         display: flex;
-        column-gap: 20em;
+        width: 100%;
+        height: 50vh;
+        @media (min-width: 768px) {
+            height: 90vh;
+
+        }
+    }
+
+        .name, .function {
+        font-family: var(--font-text);
+        color: var(--neutral-color-white);
+        display: flex;   
+        justify-content: left;
+        align-items: flex-end;     
+        padding-left: 1em;
+        font-size: clamp(var(--font-size-xxl), 5vw, var(--font-size-heading));
+            @media (min-width: 700px) {
+                position: relative;
+                bottom: 4em;
+            }
+    } 
+
+    .name {
+        padding-top: 1em;
+    }
+
+/*
+    picture {
+        @media (min-width: 768px) {
+            display: flex;
+            column-gap: 20em;
+        }
     }
 
     picture .background {
-       position: relative;
-       left: 15em;
+        position: relative;
+        width: 100%;
+        height: auto;
+        @media (min-width: 768px) {
+            left: 1em;
+        }
     }
 
-    h1, h2 {
-        font-family: var(--font-text);
-        color: var(--neutral-color-white);
-        font-size: var(--font-size-xl);
-        position: relative;
-        z-index: -1;
-        bottom: 9em;
-        padding-left: .5em;
-            @media (min-width: 400px) {
-                font-size: var(--font-size-xxl);
-                bottom: 7.5em;
-            }
-            @media (min-width: 700px) {
-                font-size: var(--font-size-heading);
-                bottom: 4.2em;
-            }
-    }   
+  
 
     h1 {
         text-transform: uppercase;
-    }
+    } */
 
     .js{
         display: none;
