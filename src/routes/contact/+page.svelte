@@ -5,13 +5,14 @@
 <Header />
 <section>
     <h1>Karima Mouadi</h1>
-    <h2>Frontend Developer and Designer</h2>
+    <h2 class="name-second">Karima Mouadi</h2>
+    <h2 class="function">Frontend Developer and Designer</h2>
 </section>
 
 <p>I’m Karima, a frontend designer and developer based in Amsterdam. Specializing in building modern and user-friendly websites. With a strong focus on detail and accessibility I transform ideas into powerful digital experiences. As a master’s degree student in International Technology law and Internet law & IE I also build websites in compliance with current European and International legislation.</p>
 
 <nav>
-    <a href="https://www.linkedin.com/in/karimamouadi/">[LinkedIn]</a>
+    <a href="https://www.linkedin.com/in/karima-m-ab63a11b3">[LinkedIn]</a>
     <a href="https://github.com/Karima002">[GitHub]</a>
     <a href="mailto:km.mouadi@gmail.com">[Email]</a>
 </nav>
@@ -26,23 +27,40 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: .5em;
     }
 
-     h1, h2 {
+     h1, .function {
         color: var(--neutral-color-white);
-        font-family: var(--font-title);
         font-size: clamp(var(--font-size-xxl), 10vw, var(--font-size-heading));
         font-family: var(--font-text);
 
     }
 
-    h1, h2 {
+    h1, .function {
         color: var(--neutral-color-white);
+    }
+
+    .name-second {
+        color: var(--accent-color-darkgreen);
+        font-family: var(--font-text);
+        font-size: clamp(var(--font-size-xxl), 10vw, var(--font-size-heading));
+        padding: .4em;
+        z-index: -1;
+        transform: translateY(-1.4em); 
+        opacity: 0.7;
     }
 
     p {
         color: var(--neutral-color-white);
         font-family: var(--font-text);
+        font-size: clamp(var(--font-size-xl), 5vw, var(--font-size-xxl));
+        text-align: center;
+        padding: 3em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
     }
 </style>
