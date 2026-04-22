@@ -47,7 +47,7 @@
         padding: .4em;
         z-index: -1;
         transform: translateY(-1.4em); 
-        opacity: 0.7;
+        opacity: .7em;
     }
 
     p {
