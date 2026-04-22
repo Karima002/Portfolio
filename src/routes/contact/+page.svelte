@@ -5,7 +5,7 @@
 <Header />
 <section>
     <h1>Karima Mouadi</h1>
-    <h2 class="name-second">Karima Mouadi</h2>
+    <h2 class="name-second">Karima Mouadii</h2>
     <h2 class="function">Frontend Developer and Designer</h2>
 </section>
 
