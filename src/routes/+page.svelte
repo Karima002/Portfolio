@@ -5,6 +5,9 @@
     import { onMount } from "svelte";
   	import { gsap } from "gsap";
   	import SplitText from "gsap/SplitText";
+    import ScrollTrigger from "gsap/ScrollTrigger";
+    import Lenis from 'lenis'
+
 
 	onMount(() => {
 		let split = new SplitText(".intro-text", { type: "chars" });
@@ -46,6 +49,20 @@
         if (typeof window.gsap === "undefined") {
         document.querySelector(".intro").classList.toggle("js");
         }
+
+        // Initialize a new Lenis instance for smooth scrolling
+        const lenis = new Lenis();
+
+        // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+        lenis.on('scroll', ScrollTrigger.update);
+
+        // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+        gsap.ticker.add((time) => {
+        lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+        });
+
+        // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+        gsap.ticker.lagSmoothing(0);
 	});
 
      
@@ -65,6 +82,10 @@
 
     <h1 class="name">Karima Mouadi</h1>
     <h2 class="function">Frontend Design and Developer</h2>
+
+    <section>
+        <h2 class="add-info">Web development and design with clean code, structure and creativity</h2>
+    </section>
 </main>
 
 <style>
@@ -103,7 +124,6 @@
     .arabic-font {
         font-family: var(--font-arabic);
         font-weight: 100;
-
     }
 
     .background {
@@ -117,7 +137,7 @@
         }
     }
 
-    .name, .function {
+    .name, .function, .add-info {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
         display: flex;   
@@ -136,7 +156,26 @@
         padding-top: 1em;
     }
 
-    .js{
+    h2, h3 {
+        color: var(--neutral-color-white);
+    }
+
+    .add-info {
+        padding-top: 3em;
+        font-family: var(--font-text);
+        color: var(--neutral-color-white);
+        display: flex;   
+        justify-content: left;
+        align-items: flex-end;     
+        font-size: clamp(10em, 5vw, 20em);
+            @media (min-width: 700px) {
+                bottom: 4em;
+                        
+            }
+
+    }
+
+    .js {
         display: none;
     }
 </style>
