@@ -88,18 +88,24 @@
     }
 
     .section-1 {
+        view-timeline-name: --sec1;
+        view-timeline-axis: block;
         @supports (timeline-trigger: --sec1 view()) {
             timeline-trigger: --sec1 view() entry calc(0% + 100px) exit calc(0% + 100px);
         }
     }
 
     .section-2 {
+        view-timeline-name: --sec2;
+        view-timeline-axis: block;
         @supports (timeline-trigger: --sec2 view()) {
             timeline-trigger: --sec2 view() entry calc(0% + 100px) exit calc(0% + 100px);
         }
     }
 
     .section-3 {
+        view-timeline-name: --sec3;
+        view-timeline-axis: block;
         @supports (timeline-trigger: --sec3 view()) {
             timeline-trigger: --sec3 view() entry calc(0% + 100px) exit calc(0% + 100px);
         }
