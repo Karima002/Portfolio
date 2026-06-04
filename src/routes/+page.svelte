@@ -7,7 +7,7 @@
     import Gallery from '../components/Gallery.svelte';
     import ScrollBar from '../components/ScrollBar.svelte';
 
-	onMount(() => {
+	onMount(async () => {
         const { gsap } = await import('gsap');
 		const SplitText = (await import('gsap/SplitText')).default;
 		const ScrollTrigger = (await import('gsap/ScrollTrigger')).default;
