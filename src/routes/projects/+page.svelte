@@ -20,6 +20,11 @@
     <section>
         <ul>
             <li>
+                <a href="/projects/qatarmuseums">
+                    <img src="{Qatar}" alt="Qatar Museums" width="150" height="150" />
+                </a>
+            </li>
+            <li>
                 <a href="/projects/civicsocialmedia">
                     <img src="{Civic}" alt="Civic Social Media" width="150" height="150" />
                 </a>
@@ -29,11 +34,7 @@
                     <img src="{Funda}" alt="Funda" width="150" height="150" />
                 </a>
             </li>
-            <li>
-                <a href="/projects/qatarmuseums">
-                    <img src="{Qatar}" alt="Qatar Museums" width="150" height="150" />
-                </a>
-            </li>
+            
             <li>
                 <a href="/projects/redpers">
                     <img src="{Redpers}" alt="Redpers" width="150" height="150" />

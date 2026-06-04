@@ -9,7 +9,7 @@
     <h2 class="function">Frontend Developer and Designer</h2>
 </section>
 
-<p>I’m Karima, a frontend designer and developer based in Amsterdam. Specializing in building modern and user-friendly websites. With a strong focus on detail and accessibility I transform ideas into powerful digital experiences. As a master’s degree student in International Technology law and Internet law & IE I also build websites in compliance with current European and International legislation.</p>
+<p>I’m Karima, a frontend designer and developer based in Amsterdam. Specializing in building modern and user-friendly websites. With a strong focus on detail and accessibility I transform ideas into powerful digital experiences. As a master’s degree student in International Technology law and Internet law & IE I also build websites in compliance with current European and International legislation. Combining creativity with research, I create websites that align with the needs of end-users</p>
 
 <nav>
     <a href="https://www.linkedin.com/in/karima-m-ab63a11b3">[LinkedIn]</a>
