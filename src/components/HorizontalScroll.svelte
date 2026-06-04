@@ -66,13 +66,14 @@
 
     h2 {
         padding-top: 1em;
+        padding-bottom: 2em;
         font-family: var(--font-text);
         color: var(--neutral-color-white);
         display: flex;   
         justify-content: left;
         align-items: flex-end;     
         padding-left: .4em;
-        font-size: clamp(3em, 5vw, 20em);
+        font-size: clamp(3em, 10vw, 20em);
             @media (min-width: 700px) {
                 bottom: 4em;           
             }

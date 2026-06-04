@@ -97,6 +97,7 @@
     
     .intro {
         position: fixed;
+        z-index: 10;
         top: 0;
         left: 0;
         display: flex;
@@ -133,6 +134,7 @@
         display: flex;
         width: 100%;
         height: 50vh;
+        z-index: 11;
         @media (min-width: 768px) {
             height: 90vh;
 
