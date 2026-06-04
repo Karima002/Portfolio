@@ -70,8 +70,6 @@
         // Disable lag smoothing in GSAP to prevent any delay in scroll animations
         gsap.ticker.lagSmoothing(0);
 	});
-
-     
 </script>
 
 <Header />
@@ -147,7 +145,7 @@
         }
     }
 
-    .name, .function, .add-info {
+    .name, .function {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
         display: flex;   
@@ -166,7 +164,7 @@
         padding-top: 1em;
     }
 
-    h2, h3 {
+    h2 {
         color: var(--neutral-color-white);
     }
 
