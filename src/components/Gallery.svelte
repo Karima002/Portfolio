@@ -32,7 +32,7 @@
 
         <li class="gallery-details section-3">
             <h2 class="gallery-title">Webdevelopment</h2>
-            <p>HTML / CSS / GSAP / NodeJS</p>
+            <p>HTML / CSS / JavaScript / GSAP / NodeJS</p>
         </li>        
     </ul>
 </nav>
@@ -42,9 +42,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
    .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         position: sticky;
         top: 0;
         height: 100vh;
@@ -53,10 +54,14 @@
         gap: 1rem;
         padding: 1rem;
         align-content: center;
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .gallery img {
-        width: min(100%, 100vh);
+        width: 100%;
+        height: auto;
         object-fit: cover;
         filter: grayscale(1);
         transition: filter 0.3s ease;
@@ -90,7 +95,7 @@
     .section-1 {
         view-timeline-name: --sec1;
         view-timeline-axis: block;
-        @supports (timeline-trigger: --sec1 view()) {
+        @supports (timeline-trigger: --sec1 view()) { /*https://developer.chrome.com/blog/scroll-triggered-animations*/
             timeline-trigger: --sec1 view() entry calc(0% + 20em) exit calc(0% + 20em);
         }
     }
@@ -124,6 +129,10 @@
     h2, p {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-xxl);
+    }
+
+    h2 {
+        font-weight: 700;
     }
 </style>
