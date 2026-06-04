@@ -3,15 +3,18 @@
     import background from '$lib/assets/background-image.svg';
     import pattern from '$lib/assets/moroccan-pattern.svg';
     import { onMount } from "svelte";
-  	import { gsap } from "gsap";
-  	import SplitText from "gsap/SplitText";
-    import ScrollTrigger from "gsap/ScrollTrigger";
-    import Lenis from 'lenis'
     import HorizontalScroll from '../components/HorizontalScroll.svelte';
     import Gallery from '../components/Gallery.svelte';
     import ScrollBar from '../components/ScrollBar.svelte';
 
 	onMount(() => {
+        const { gsap } = await import('gsap');
+		const SplitText = (await import('gsap/SplitText')).default;
+		const ScrollTrigger = (await import('gsap/ScrollTrigger')).default;
+		const Lenis = (await import('lenis')).default;
+
+		gsap.registerPlugin(SplitText, ScrollTrigger);
+
 		let split = new SplitText(".intro-text", { type: "chars" });
 		const tl = gsap.timeline();
 		
@@ -177,7 +180,7 @@
         border: none;
         color: var(--neutral-color-white);
         font-family: var(--font-text);
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-large);
     }
 
     .js {
