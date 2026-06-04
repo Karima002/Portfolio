@@ -7,6 +7,8 @@
   	import SplitText from "gsap/SplitText";
     import ScrollTrigger from "gsap/ScrollTrigger";
     import Lenis from 'lenis'
+    import HorizontalScroll from '../components/HorizontalScroll.svelte';
+    import Gallery from '../components/Gallery.svelte';
 
 
 	onMount(() => {
@@ -50,6 +52,7 @@
         document.querySelector(".intro").classList.toggle("js");
         }
 
+        // Smoothscroll with Lenis and GSAP's ScrollTrigger plugin
         // Initialize a new Lenis instance for smooth scrolling
         const lenis = new Lenis();
 
@@ -83,9 +86,8 @@
     <h1 class="name">Karima Mouadi</h1>
     <h2 class="function">Frontend Design and Developer</h2>
 
-    <section>
-        <h2 class="add-info">Web development and design with clean code, structure and creativity</h2>
-    </section>
+    <HorizontalScroll />
+    <Gallery />
 </main>
 
 <style>
@@ -158,21 +160,6 @@
 
     h2, h3 {
         color: var(--neutral-color-white);
-    }
-
-    .add-info {
-        padding-top: 3em;
-        font-family: var(--font-text);
-        color: var(--neutral-color-white);
-        display: flex;   
-        justify-content: left;
-        align-items: flex-end;     
-        font-size: clamp(10em, 5vw, 20em);
-            @media (min-width: 700px) {
-                bottom: 4em;
-                        
-            }
-
     }
 
     .js {
