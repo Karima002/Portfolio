@@ -9,7 +9,7 @@
     import Lenis from 'lenis'
     import HorizontalScroll from '../components/HorizontalScroll.svelte';
     import Gallery from '../components/Gallery.svelte';
-
+    import ScrollBar from '../components/ScrollBar.svelte';
 
 	onMount(() => {
 		let split = new SplitText(".intro-text", { type: "chars" });
@@ -72,6 +72,7 @@
 </script>
 
 <Header />
+<ScrollBar />
 
 <main>
     <section class="intro js">
@@ -85,6 +86,8 @@
 
     <h1 class="name">Karima Mouadi</h1>
     <h2 class="function">Frontend Design and Developer</h2>
+
+    <button>Scroll down</button>
 
     <HorizontalScroll />
     <Gallery />
@@ -162,6 +165,19 @@
 
     h2, h3 {
         color: var(--neutral-color-white);
+    }
+
+    button {
+        position: fixed;
+        z-index: 9;
+        bottom: 2em;
+        right: .5em;
+        transform: translateX(-50%);
+        background-color: transparent;
+        border: none;
+        color: var(--neutral-color-white);
+        font-family: var(--font-text);
+        font-size: var(--font-size-l);
     }
 
     .js {
