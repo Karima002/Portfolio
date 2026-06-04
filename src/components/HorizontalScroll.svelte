@@ -66,7 +66,7 @@
 
     h2 {
         padding-top: 1em;
-        padding-bottom: 2em;
+        padding-bottom: .2em;
         font-family: var(--font-text);
         color: var(--neutral-color-white);
         display: flex;   
