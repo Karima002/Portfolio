@@ -17,7 +17,7 @@
 
             <article class="info">
                 <a href="https://user-experience-enhanced-website-w869.onrender.com/en">
-                    <img src={QatarMuseums} alt="Qatar Museums homepage artwork displaying a crown" width="300" height="150" >
+                    <img src={QatarMuseums} alt="Qatar Museums homepage artwork displaying a crown" size="auto" width="900" height="600">
                 </a>
                 <p class="body">{project.body}</p>
             </article>
