@@ -2,26 +2,31 @@
 @font-face {
   font-family: 'Alumni Sans Pinstripe';
   src: url('$lib/fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+  font-display : swap;
 }
 
 @font-face {
   font-family: 'Alumni Sans Pinstripe Italic';
   src: url('$lib/fonts/AlumniSansPinstripe-Italic.ttf') format('truetype');
+  font-display : swap;
 }
 
 @font-face {
   font-family: 'Al tarikh';
   src: url('$lib/fonts/altarikh.ttf') format('truetype');
+  font-display : swap;
 }
 
 @font-face {
   font-family: 'Instrument Serif';
   src: url('$lib/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-display : swap;
 }
 
 @font-face {
   font-family: 'Instrument Serif Italic';
   src: url('$lib/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-display : swap;
 }
 
 * {
