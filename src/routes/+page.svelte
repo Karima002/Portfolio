@@ -1,7 +1,6 @@
 <script>
     import Header from '../components/Header.svelte';
     import background from '$lib/assets/background-image.svg';
-    import backgroundWebp from '$lib/assets/background-image.webp';
     import pattern from '$lib/assets/moroccan-pattern.svg';
     import { onMount } from "svelte";
     import HorizontalScroll from '../components/HorizontalScroll.svelte';
@@ -82,10 +81,7 @@
         <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
 
-    <picture>
-        <source type="image/webp" srcset={backgroundWebp}>
         <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" >
-    </picture>  
 
     <h1 class="name">Karima Mouadi</h1>
     <h2 class="function">Frontend Design and Developer</h2>
