@@ -88,7 +88,7 @@
     <h1 class="name">Karima Mouadi</h1>
     <h2 class="function">Frontend Design and Developer</h2>
 
-    <button>Scroll down</button>
+    <p class="scroll-down">↓ Scroll down to explore</p>
 
     <HorizontalScroll />
     <Gallery />
@@ -177,13 +177,11 @@
         color: var(--neutral-color-white);
     }
 
-    button {
+    .scroll-down {
         position: fixed;
         z-index: 9;
         bottom: 2.8em;
-        right: .5em;
-        transform: translateX(-50%);
-        background-color: transparent;
+        right: 1em;
         border: none;
         color: var(--neutral-color-white);
         font-family: var(--font-text);
