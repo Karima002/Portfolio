@@ -11,7 +11,7 @@
         </li>
 
         <li class="gallery-item">
-            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="280" height="300" />
+            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="200" height="220" />
         </li>
 
         <li class="gallery-item">
@@ -72,7 +72,7 @@
     @keyframes activate-image {
         0% {
             filter: grayscale(1);
-            scale: 0.8;
+            scale: 0.7;
         }
         100% {
             filter: grayscale(0);

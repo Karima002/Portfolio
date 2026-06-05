@@ -92,6 +92,15 @@
 
     <HorizontalScroll />
     <Gallery />
+
+    <section class="outro">
+        <p>Portfolio</p>
+        <p>Portfolio</p>
+        <p>Portfolio</p>
+        <p>Portfolio</p>
+        <p>Portfolio</p>
+        <p>Portfolio</p>
+    </section>
 </main>
 
 <style>
@@ -171,14 +180,25 @@
     button {
         position: fixed;
         z-index: 9;
-        bottom: 2em;
+        bottom: 2.8em;
         right: .5em;
         transform: translateX(-50%);
         background-color: transparent;
         border: none;
         color: var(--neutral-color-white);
         font-family: var(--font-text);
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-l);
+    }
+
+    .outro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: var(--neutral-color-white);
+        font-family: var(--font-text);
+        font-size: clamp(1.5rem, 5vw, 9rem);
+        margin-top: 2em;
+        text-transform: uppercase;
     }
 
     .js {

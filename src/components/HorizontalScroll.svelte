@@ -11,20 +11,20 @@
 
         function getScrollAmount () {
             let scrollWidth = wrapper.scrollWidth;
-            return -(scrollWidth + window.innerWidth);
+            return -(scrollWidth - window.innerWidth);
         }
 
         mm.add("(prefers-reduced-motion: no-preference)", () => {
 
             const tween =  gsap.fromTo(wrapper,
-                { x: window.innerWidth },
+                { x: 0 },
                 { x: getScrollAmount, ease: 'none',}
             );
             
             ScrollTrigger.create({
                 trigger: wrapper,
                 start: "top 20%",
-                end: () => `+=${getScrollAmount() * -1} top`,
+                end: () => `+=${wrapper.scrollWidth - window.innerWidth}`,
                 pin: true,
                 animation: tween,
                 invalidateOnRefresh: true,
@@ -35,11 +35,15 @@
     });
 </script>
 
-<div class="scroll-container">
+<div class="scroll-container"> <!-- Needed the div wrapper for the overflow hidden-->
     <section class="wrapper">
         <article class="scroll-section">
                 <h2 class="add-info">Web development and design with clean code, structure and creativity</h2>
         </article>
+    </section>
+
+    <section class="areas">
+        <h2>Areas of expertise</h2>
     </section>
 </div>
 
@@ -74,5 +78,15 @@
             @media (min-width: 700px) {
                 bottom: 4em;           
             }
+    }
+
+    .areas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10em;
+        h2 {
+            font-size: var(--font-size-xxl);
+        }
     }
 </style>
