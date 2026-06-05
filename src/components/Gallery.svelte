@@ -7,15 +7,15 @@
 <nav>
     <ul class="gallery">
         <li class="gallery-item">
-            <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="280" height="300" >
+            <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="240" height="260" >
         </li>
 
         <li class="gallery-item">
-            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="200" height="220" >
+            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="240" height="260" >
         </li>
 
         <li class="gallery-item">
-            <img class="image-3" src={code} alt="White coding symbol </>" width="280" height="280" >
+            <img class="image-3" src={code} alt="White coding symbol </>" width="240" height="260" >
         </li>
     </ul>
 
@@ -49,12 +49,10 @@
             top: 0;
             height: 100vh;
             display: grid;
-            width: 50vw;
-            gap: 1rem;
-            padding: 1rem;
             align-content: center;
-            @media (min-width: 768px) {
-                grid-template-columns: 1fr 1fr;
+            @media (min-width: 700px) {
+                padding: 6em;
+
             }
         }
 
@@ -62,9 +60,9 @@
             width: 100%;
             height: auto;
             object-fit: cover;
+            padding-left: 1em;
             filter: grayscale(1);
             transition: filter 0.3s ease;
-            margin: 0 auto;
             animation: activate-image 0.15s ease-in-out both;
         }
     }
@@ -129,7 +127,10 @@
     h2, p {
         font-family: var(--font-text);
         color: var(--neutral-color-white);
-        font-size: var(--font-size-xxl);
+        font-size: var(--font-size-xl);
+        @media (min-width: 700px) {
+            font-size: var(--font-size-xxl);
+        }
     }
 
     h2 {
