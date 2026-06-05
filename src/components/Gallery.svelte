@@ -41,32 +41,32 @@
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
 
-   .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        display: grid;
-        width: 50vw;
-        gap: 1rem;
-        padding: 1rem;
-        align-content: center;
-        @media (min-width: 768px) {
-            grid-template-columns: 1fr 1fr;
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: grid;
+            width: 50vw;
+            gap: 1rem;
+            padding: 1rem;
+            align-content: center;
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
         }
-    }
 
-    .gallery img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        filter: grayscale(1);
-        transition: filter 0.3s ease;
-        margin: 0 auto;
-        animation: activate-image 0.15s ease-in-out both;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: filter 0.3s ease;
+            margin: 0 auto;
+            animation: activate-image 0.15s ease-in-out both;
+        }
     }
 
     @keyframes activate-image {
