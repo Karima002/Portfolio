@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={favicon} >
 	<title>Portfolio</title>
 </svelte:head>
 

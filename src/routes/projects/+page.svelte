@@ -21,28 +21,28 @@
         <ul>
             <li>
                 <a href="/projects/qatarmuseums">
-                    <img src="{Qatar}" alt="Qatar Museums" width="150" height="150" />
+                    <img src="{Qatar}" alt="Qatar Museums" width="150" height="150" >
                 </a>
             </li>
             <li>
                 <a href="https://fazael.com">
-                    <img src="{Fazael}" alt="Fazael" width="150" height="150" />
+                    <img src="{Fazael}" alt="Fazael" width="150" height="150" >
                 </a>
             </li>
             <li>
                 <a href="https://civicsocialmediaapp.netlify.app/">
-                    <img src="{Civic}" alt="Civic Social Media" width="150" height="150" />
+                    <img src="{Civic}" alt="Civic Social Media" width="150" height="150" >
                 </a>
             </li>
             <li>
                 <a href="https://proof-of-concept-s12.onrender.com/detail/koop/Amsterdam/huis-Apollolaan-11/28">
-                    <img src="{Funda}" alt="Funda" width="150" height="150" />
+                    <img src="{Funda}" alt="Funda" width="150" height="150" >
                 </a>
             </li>
             
             <li>
                 <a href="https://karima002.github.io/fix-the-flow-interactive-website-/">
-                    <img src="{Redpers}" alt="Redpers" width="150" height="150" />
+                    <img src="{Redpers}" alt="Redpers" width="150" height="150" >
                 </a>
             </li>
         </ul>

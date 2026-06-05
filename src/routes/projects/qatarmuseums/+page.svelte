@@ -16,7 +16,7 @@
             </article>
 
             <article class="info">
-                <img src={QatarMuseums} alt="Qatar Museums homepage artwork displaying a crown" width="300" height="150" />
+                <img src={QatarMuseums} alt="Qatar Museums homepage artwork displaying a crown" width="300" height="150" >
                 <p class="body">{project.body}</p>
             </article>
 

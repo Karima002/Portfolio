@@ -7,15 +7,15 @@
 <nav>
     <ul class="gallery">
         <li class="gallery-item">
-            <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="280" height="300" />
+            <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="280" height="300" >
         </li>
 
         <li class="gallery-item">
-            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="200" height="220" />
+            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="200" height="220" >
         </li>
 
         <li class="gallery-item">
-            <img class="image-3" src={code} alt="White coding symbol </>" width="280" height="280" />
+            <img class="image-3" src={code} alt="White coding symbol </>" width="280" height="280" >
         </li>
     </ul>
 

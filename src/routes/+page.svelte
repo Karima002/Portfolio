@@ -82,7 +82,7 @@
     </section>
 
     <picture>
-        <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" />
+        <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" >
     </picture>  
 
     <h1 class="name">Karima Mouadi</h1>
