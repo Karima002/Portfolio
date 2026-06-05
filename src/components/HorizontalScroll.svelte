@@ -32,6 +32,10 @@
             });
                 
         });   
+
+        if (typeof window.gsap === "undefined") {
+            document.querySelector(".add-info").classList.add("js");
+        }
     });
 </script>
 
@@ -88,5 +92,9 @@
         h2 {
             font-size: var(--font-size-xxl);
         }
+    }
+
+    .js {
+        display: block;
     }
 </style>

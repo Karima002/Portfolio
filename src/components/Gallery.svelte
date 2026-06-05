@@ -2,20 +2,32 @@
     import figma from '$lib/assets/figma.jpg';
     import code from '$lib/assets/code.png';
     import frameworks from '$lib/assets/frameworks.png';
+    import figmaWebp from '$lib/assets/figma.webp';
+    import codeWebp from '$lib/assets/code.webp';
+    import frameworksWebp from '$lib/assets/frameworks.webp';
 </script>
 
 <nav>
     <ul class="gallery">
         <li class="gallery-item">
-            <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="240" height="260" >
+            <picture>
+                <source type="image/webp" srcset={figmaWebp}>
+                <img class="image-1" src={figma} alt="A screenshot of the Figma logo showing a green, purple, red, orange and violet circle connected to each other" width="240" height="260" >
+            </picture>
         </li>
 
         <li class="gallery-item">
-            <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="240" height="260" >
+            <picture>
+                <source type="image/webp" srcset={frameworksWebp}>
+                <img class="image-2" src={frameworks} alt="A screenshot of the frameworks logos sveltekit, astro, eleventy, nuxtjs" width="240" height="260" >
+            </picture>
         </li>
 
         <li class="gallery-item">
-            <img class="image-3" src={code} alt="White coding symbol </>" width="240" height="260" >
+            <picture>
+                <source type="image/webp" srcset={codeWebp}>
+                <img class="image-3" src={code} alt="White coding symbol </>" width="240" height="260" >
+            </picture>
         </li>
     </ul>
 
