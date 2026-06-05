@@ -51,22 +51,21 @@
     .scroll-container {
         overflow: hidden;
         width: 100vw;
-    }
 
-    .wrapper {
-        display: flex;
-        width: max-content;
-    }
-
-    .scroll-section {
-        padding: 4em 0 0 3em;
-        white-space: nowrap;
-        @media (min-width: 768px) {
-            padding: 4em 0 0 4.5em;
+        .wrapper {
+            display: flex;
+            width: max-content;
         }
-    }
+        
+        .scroll-section { 
+            padding: 4em 0 0 3em; 
+            white-space: nowrap; 
+            @media (min-width: 768px) { 
+                padding: 4em 0 0 4.5em; 
+            }
+        }
 
-    h2 {
+        h2 {
         padding-top: .5em;
         font-family: var(--font-text);
         color: var(--neutral-color-white);
@@ -78,6 +77,7 @@
             @media (min-width: 700px) {
                 bottom: 4em;           
             }
+        }
     }
 
     .areas {
