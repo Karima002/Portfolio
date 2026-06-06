@@ -40,4 +40,18 @@
         }
     }
 
+        
+    select {
+    border: 1px solid #dddddd;
+    background: none;
+    color: var(--neutral-color-white);
+    padding: .5em 1.5em .5em 1.5em;
+    transition: 0.4s;
+    &:hover {
+        background: var(--neutral-color-white);
+        color: var(--neutral-color-black);
+        cursor: pointer;
+    }
+    }
+
 </style>
