@@ -1,3 +1,7 @@
+<script>
+    import { t, locale, locales } from "$lib/i18n";
+</script>
+
 <header>
     <ul>
         <li>
@@ -10,6 +14,14 @@
 
         <li>
             <a href="/contact">[Contact me]</a>
+        </li>
+
+        <li>
+            <select bind:value={$locale}>
+            {#each locales as l}
+                <option value={l}>{l}</option>
+            {/each}
+            </select>
         </li>
     </ul>
 </header>
