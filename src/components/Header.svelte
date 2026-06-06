@@ -5,15 +5,15 @@
 <header>
     <ul>
         <li>
-            <a href="/">[Home]</a>
+            <a href="/">{$t("header-home")}</a>
         </li>
         
         <li>
-            <a href="/projects">[Projects]</a>
+            <a href="/projects">{$t("header-projects")}</a>
         </li>
 
         <li>
-            <a href="/contact">[Contact me]</a>
+            <a href="/contact">{$t("header-contact")}</a>
         </li>
 
         <li>
