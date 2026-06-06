@@ -2,7 +2,10 @@
     import gsap from "gsap";
     import ScrollTrigger from "gsap/ScrollTrigger";
     import { onMount } from "svelte";
-    
+
+    //Svelte-i18n    
+    import { t, locale, locales } from "$lib/i18n";
+
     gsap.registerPlugin(ScrollTrigger);
     
     onMount(() => {
@@ -42,12 +45,12 @@
 <div class="scroll-container"> <!-- Needed the div wrapper for the overflow hidden-->
     <section class="wrapper">
         <article class="scroll-section">
-                <h2 class="add-info">Web development and design with clean code, structure and creativity</h2>
+                <h2 class="add-info">{$t("horizontal-scroll")}</h2>
         </article>
     </section>
 
     <section class="areas">
-        <h2>Areas of expertise</h2>
+        <h2>{$t("areas-of-expertise")}</h2>
     </section>
 </div>
 
