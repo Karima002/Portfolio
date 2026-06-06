@@ -5,6 +5,9 @@
     import figmaWebp from '$lib/assets/figma.webp';
     import codeWebp from '$lib/assets/code.webp';
     import frameworksWebp from '$lib/assets/frameworks.webp';
+
+    //Sveltekit i18n
+    import { t, locale, locales } from "$lib/i18n";
 </script>
 
 <nav>
@@ -33,18 +36,18 @@
 
     <ul>
         <li class="gallery-details section-1">
-            <h2 class="gallery-title">Webdesign</h2>
-            <p>UX / UI / Figma / Affinity / Adobe Indesign / Adobe Illustrator</p>
+            <h2 class="gallery-title">{$t("expertise-1")}</h2>
+            <p>{$t("expertise-1-detail")}</p>
         </li>
 
         <li class="gallery-details section-2">
-            <h2 class="gallery-title">Frameworks</h2>
-            <p>Astro / Sveltekit / 11ty / Nuxt JS</p>
+            <h2 class="gallery-title">{$t("expertise-2")}</h2>
+            <p>{$t("expertise-2-detail")}</p>
         </li>
 
         <li class="gallery-details section-3">
-            <h2 class="gallery-title">Webdevelopment</h2>
-            <p>HTML / CSS / JavaScript / GSAP / NodeJS</p>
+            <h2 class="gallery-title">{$t("expertise-3")}</h2>
+            <p>{$t("expertise-3-detail")}</p>
         </li>        
     </ul>
 </nav>
