@@ -7,6 +7,8 @@
     import Gallery from '../components/Gallery.svelte';
     import ScrollBar from '../components/ScrollBar.svelte';
 
+    import { t, locale, locales } from "$lib/i18n";
+	
 	onMount(async () => {
         const { gsap } = await import('gsap');
 		const SplitText = (await import('gsap/SplitText')).default;
@@ -76,17 +78,18 @@
 <ScrollBar />
 
 <main>
+
     <section class="intro js">
         <h1 class="intro-text ">Portfolio</h1>
         <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
 
-        <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" >
+    <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" >
 
-    <h1 class="name">Karima Mouadi</h1>
-    <h2 class="function">Frontend Design and Developer</h2>
+    <h1 class="name">{$t("homepage.title")}</h1>
+    <h2 class="function">{@html $t("homepage.function")}</h2>
 
-    <p class="scroll-down">↓ Scroll down to explore</p>
+    <p class="scroll-down">{$t("scroll-down")}</p>
 
     <HorizontalScroll />
     <Gallery />
