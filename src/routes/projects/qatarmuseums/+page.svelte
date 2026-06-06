@@ -2,10 +2,13 @@
     import Header from '../../../components/Header.svelte';
     import pattern from '$lib/assets/moroccan-pattern.svg';
     import QatarMuseums from '$lib/assets/qatar-home.svg';
+    import ScrollBar from '../../../components/ScrollBar.svelte';
     let { data } = $props();    
 </script>
 
 <Header />
+<ScrollBar />
+
 
 <main>
     {#each data.projects as project}

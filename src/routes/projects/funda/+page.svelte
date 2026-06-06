@@ -1,3 +1,11 @@
+<script>
+    import Header from "../../../components/Header.svelte";
+    import ScrollBar from "../../../components/ScrollBar.svelte";
+</script>
+
+<Header />
+<ScrollBar />
+
 <h1> Coming soon </h1>
 
 

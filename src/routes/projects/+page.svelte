@@ -7,11 +7,15 @@
     import Qatar from '$lib/assets/qatar.png';
     import Redpers from '$lib/assets/redpers.png';
     import Fazael from '$lib/assets/fazael.svg';
+    import ScrollBar from '../../components/ScrollBar.svelte';
+    
     let { data } = $props();
 
 </script>
 
 <Header />
+<ScrollBar />
+
 
 <main>
     

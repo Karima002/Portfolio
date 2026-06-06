@@ -55,20 +55,22 @@ body {
     --font-size-m: 1.25rem;   /* 1.25 * 16px = 20px */
     --font-size-s: 1rem;      /* 1 * 16px = 16px */
     --font-size-xs: 0.875rem; /* 0.875 * 16px = 14px */
+
+    overflow-y: hidden;
 }
 
 
 a {
-        text-decoration: none;
-        font-family: var(--font-text);
-        font-size: var(--font-size-xl);
-        color: var(--neutral-color-white);
-        font-weight: 100;
-        text-transform: uppercase;
-        &:hover {
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: .3em;
-            cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-text);
+  font-size: var(--font-size-xl);
+  color: var(--neutral-color-white);
+  font-weight: 100;
+  text-transform: uppercase;
+  &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .3em;
+      cursor: pointer;
         }
     }
