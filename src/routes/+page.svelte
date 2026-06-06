@@ -95,12 +95,11 @@
     <Gallery />
 
     <section class="outro">
-        <p>Portfolio</p>
-        <p>Portfolio</p>
-        <p>Portfolio</p>
-        <p>Portfolio</p>
-        <p>Portfolio</p>
-        <p>Portfolio</p>
+        <p>{$t("outro-portfolio")}</p>
+        <p>{$t("outro-portfolio")}</p>
+        <p>{$t("outro-portfolio")}</p>
+        <p>{$t("outro-portfolio")}</p>
+        <p>{$t("outro-portfolio")}</p>
     </section>
 </main>
 
