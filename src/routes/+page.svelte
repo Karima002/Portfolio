@@ -84,7 +84,7 @@
         <h2 class="intro-text-arabic arabic-font">بـــــورتـفـوليـــــو</h2>
     </section>
 
-    <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" >
+    <img class="background" src="{background}" alt="A dark green geometric pattern" width="400" height="200" fetchpriority="high">
 
     <h1 class="name">{$t("homepage.title")}</h1>
     <h2 class="function">{@html $t("homepage.function")}</h2>
