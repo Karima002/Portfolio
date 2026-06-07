@@ -8,6 +8,8 @@
     import Redpers from '$lib/assets/redpers.png';
     import Fazael from '$lib/assets/fazael.svg';
     import ScrollBar from '../../components/ScrollBar.svelte';
+    import { t, locale, locales } from "$lib/i18n";
+
     
     let { data } = $props();
 
@@ -51,7 +53,7 @@
             </li>
         </ul>
 
-        <h1>Projects</h1>
+        <h1>{$t("projects-title")}</h1>
     </section>
 
   {#each data.projects as project}

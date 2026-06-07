@@ -56,7 +56,7 @@ export default {
     "header-home": "الرئيسية",
     "header-projects": "المشاريع",
     "header-contact": "اتصل بي",
-    "homepage.title": "كريمة معوادي",
+    "homepage.title": "كريمة موادي",
     "homepage.function": "مصممة ومطورة واجهات أمامية",
     "scroll-down": "↓ قم بالتمرير لأسفل للاستكشاف",
     "horizontal-scroll": "تطوير وتصميم الويب مع كود نظيف، هيكل وإبداع",
@@ -67,7 +67,7 @@ export default {
     "expertise-2-detail": "Astro / Sveltekit / 11ty / Nuxt JS",
     "expertise-3": "تطوير الويب",
     "expertise-3-detail": "HTML / CSS / JavaScript / GSAP / NodeJS",
-    "outro-portfolio": "محفظة",
+    "outro-portfolio": "بورتفوليو",
 
     //projects
     "projects-title": "المشاريع",
