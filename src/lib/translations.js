@@ -47,7 +47,7 @@ export default {
     "projects-title": "Proyectos",
 
     //contact
-    "contact-description": "Soy Karima, una diseñadora y desarrolladora frontend con sede en Ámsterdam. Especializada en construir sitios web modernos y fáciles de usar. Con un fuerte enfoque en el detalle y la accesibilidad, transformo ideas en poderosas experiencias digitales. Como estudiante de maestría en Derecho Internacional de la Tecnología y Derecho de Internet y Propiedad Intelectual, también construyo sitios web en cumplimiento con la legislación europea e internacional actual. Combinando creatividad con investigación, creo sitios web que se alinean con las necesidades de los usuarios finales.",
+    "contact-description": "Soy Karima, una diseñadora y desarrolladora frontend en Ámsterdam. Especializada en construir plataformas web modernos y fáciles de usar. Con un fuerte enfoque en el detalle y la accesibilidad, transformo ideas en poderosas experiencias digitales. Como estudiante de maestría en derecho Internacional de la Tecnología y derecho de Internet y Propiedad Intelectual, también construyo plataformas web en cumplimiento con la legislación europea e internacional actual. Combinando creatividad con investigación, creo sitios web que se alinean con las necesidades de los usuarios finales.",
     "email": "Correo electrónico"
   },
 
