@@ -21,7 +21,7 @@ export default {
     "projects-title": "Projects",
 
     //contact page
-    "contact-description": "I’m Karima, a frontend designer and developer based in Amsterdam. Specializing in building modern and user-friendly websites. With a strong focus on detail and accessibility I transform ideas into powerful digital experiences. As a master’s degree student in International Technology law and Internet law & IE I also build websites in compliance with current European and International legislation. Combining creativity with research, I create websites that align with the needs of end-users",
+    "contact-description": "I’m Karima, a frontend designer and developer based in Amsterdam. Specializing in building modern and user-friendly websites. With a focus on detail and accessibility I transform ideas into digital experiences. As a master’s degree student in International Technology law and Internet law & IE I also build websites in compliance with current European and International legislation. Combining creativity with research, I create websites that align with the needs of end-users",
     "email": "email"
   },
 
