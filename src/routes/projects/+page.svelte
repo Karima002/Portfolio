@@ -8,6 +8,7 @@
     import Redpers from '$lib/assets/redpers.png';
     import Fazael from '$lib/assets/fazael.svg';
     import ScrollBar from '../../components/ScrollBar.svelte';
+    import KunstinC from '$lib/assets/kunstinc.png';
     import { t, locale, locales } from "$lib/i18n";
 
     
@@ -26,7 +27,12 @@
     <section>
         <ul>
             <li>
-                <a href="/projects/qatarmuseums">
+                <a href="https://kunstinc.nl/ontdekken/">
+                    <img src="{KunstinC}" alt="Qatar Museums" width="150" height="150" >
+                </a>
+            </li>
+            <li>
+                <a href="https://user-experience-enhanced-website-w869.onrender.com/en">
                     <img src="{Qatar}" alt="Qatar Museums" width="150" height="150" >
                 </a>
             </li>
