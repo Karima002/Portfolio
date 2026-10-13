@@ -8,6 +8,14 @@
     import ScrollBar from '../components/ScrollBar.svelte';
 
     import { t, locale, locales } from "$lib/i18n";
+
+    onMount(() => {
+        const script = document.createElement('script');
+        script.src = '//gc.zgo.at/count.js';
+        script.async = true;
+        script.dataset.goatcounter = 'https://portfoliokm.goatcounter.com/count';
+        document.head.appendChild(script);
+    });
 	
 	onMount(async () => {
         const { gsap } = await import('gsap');
@@ -74,7 +82,6 @@
 	});
 </script>
 
-<script data-goatcounter="https://portfoliokm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 <Header />
 <ScrollBar />
