@@ -21,14 +21,11 @@
 
 
 <main>
-    
-
-    <!-- <img class="pattern" src="{pattern}" alt="A light darkgreen moroccan pattern" /> -->
     <section>
         <ul>
             <li>
                 <a href="https://kunstinc.nl/ontdekken/">
-                    <img src="{KunstinC}" alt="Qatar Museums" width="150" height="150" >
+                    <img src="{KunstinC}" alt="Kunst in C" width="150" height="150" >
                 </a>
             </li>
             <li>
